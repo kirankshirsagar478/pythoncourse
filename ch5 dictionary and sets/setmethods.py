@@ -12,7 +12,9 @@ print(a)
 print(len(a)) #prints lenght of the set
 #remove
 a.remove(0)
+#a.remove(12)  can't remove (not in list)
 print (a)
+
 #pop
 print(a.pop()) #pics random value and remove it
 print(a)
