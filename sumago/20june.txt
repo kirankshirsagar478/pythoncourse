@@ -1,0 +1,39 @@
+Exception Handling:
+    Types of errors:
+        KeyError
+        typeError
+        nameError
+        customError
+        ext.,
+
+
+Python try except:
+    try block and except block in python.
+
+Try except else finally blocks in python:
+    example:
+        try:
+            a=5
+            b=0
+            print(a/b)
+        except ZeroDivisionError:
+            print("error")
+        else:
+            print("else")
+        finally:
+            print("finally")
+        print("End of code")
+
+Errors and exceptions in python:(geeksofgeeks):               
+    system defined , built in
+    user defined
+
+File Handling:
+    r
+    w
+    a
+    r+
+    w+
+    a+
+    write()
+    writelines()
