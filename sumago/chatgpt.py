@@ -24,7 +24,7 @@ class ATM:
         self.accounts = []
 
     def create_account(self):
-        ac_no = input("Enter account number: ")
+        ac_no = int(input("Enter account number: "))
         while True:
             pin=int(input("Enter 4 Digit Pin:"))
             pin1=int(input("Confirm pin:"))
@@ -32,17 +32,15 @@ class ATM:
                 print("Pin Created")
                 break
             else:
-                print("Wrong Pin")
-
-        
+                print("Wrong Pin!!!, Set new Pin.")
         bal = float(input("Enter initial balance: "))
         account = Account(ac_no, pin, bal)
         self.accounts.append(account)
         print("Account created successfully!!.")
 
     def login(self):
-        ac_no = input("Enter account number: ")
-        pin = input("Enter PIN: ")
+        ac_no = int(input("Enter account number: "))
+        pin = int(input("Enter PIN: "))
 
         for account in self.accounts:
             if account.ac_no == ac_no and account.pin == pin:
@@ -50,7 +48,7 @@ class ATM:
                 self.perform_transactions(account)
                 break
         else:
-            print("Invalid account number or PIN.")
+            print("Invalid account number or PIN!!!!")
 
     def perform_transactions(self, account):
         while True:
